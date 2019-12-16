@@ -57,13 +57,11 @@ def store_point(json_str):
         print("unsupprot data type :", data_type)
         return
 
-    # print_report_info(json_dic)
+    print_report_info(json_dic)
 
-    data_storage_impl[data_type](json_dic['infoStr'])
+    data_storage_impl[data_type](json_dic['infoStr'], json_dic['deviceInfoStr'])
 
 
 def print_report_info(json_dic):
-    time = json_dic['time']
-    page_name = json_dic['pageName']
-    device_info_str = json_dic['deviceInfoStr']
-    print(TAG, "time : ", time, "; page_name : ", page_name, "; device_info_str : ", device_info_str)
+    print(TAG, "time : ", json_dic['time'], "; page_name : ", json_dic['pageName'], "; device_info_str : ",
+          json_dic['deviceInfoStr'], "; infoStr :", json_dic['infoStr'])

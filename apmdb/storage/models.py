@@ -3,7 +3,18 @@ from django.db import models
 
 # Create your models here.
 
-class PageSpeed(models.Model):
+# 基本的设备信息
+class DeviceInfo(models.Model):
+    deviceName = models.CharField(max_length=100, default="")
+    deviceId = models.CharField(max_length=100, default="")
+    systemVersion = models.CharField(max_length=100, default="")
+    appVersionCode = models.CharField(max_length=100, default="")
+
+    class Meta:
+        abstract = True
+
+
+class PageSpeed(DeviceInfo):
     time = models.IntegerField(default=0)
     createStartTime = models.IntegerField(default=0)
     createEndTime = models.IntegerField(default=0)
@@ -14,14 +25,29 @@ class PageSpeed(models.Model):
     apiRequestCostStr = models.CharField(max_length=200, null=True)
 
 
-class AppStartInfo(models.Model):
+class AppStartInfo(DeviceInfo):
     time = models.IntegerField(default=0)
     createStartTime = models.IntegerField(default=0)
     createEndTime = models.IntegerField(default=0)
     fullShowCostTime = models.IntegerField(default=0)
 
 
-class MemoryInfo(models.Model):
+class BlockInfo(DeviceInfo):
+    time = models.IntegerField(default=0)
+    blockTime = models.IntegerField(default=0)
+    identifier = models.CharField(max_length=500)
+    pageName = models.CharField(max_length=100, default="")
+
+
+class FPSInfo(DeviceInfo):
+    time = models.IntegerField(default=0)
+    pageName = models.CharField(max_length=100, default="")
+    minFps = models.IntegerField(default=0)
+    maxFps = models.IntegerField()
+    avgFps = models.IntegerField
+
+
+class MemoryInfo(DeviceInfo):
     time = models.IntegerField(default=0)
     totalSize = models.IntegerField(default=0)
     vmSize = models.IntegerField(default=0)
@@ -29,17 +55,10 @@ class MemoryInfo(models.Model):
     otherSize = models.IntegerField(default=0)
 
 
-class ExceptionInfo(models.Model):
+class ExceptionInfo(DeviceInfo):
     time = models.IntegerField(default=0)
     crashTraceStr = models.CharField(max_length=10000)
     simpleMessage = models.CharField(max_length=1000)
     threadName = models.CharField(max_length=100)
     currentSystemName = models.CharField(max_length=100)
     exceptionName = models.CharField(max_length=200)
-
-
-class BlockInfo(models.Model):
-    time = models.IntegerField(default=0)
-    costTime = models.IntegerField(default=0)
-    blockIdentifier = models.CharField(max_length=200)
-    blockFrameStackTraceStrList = models.CharField(max_length=100000)
