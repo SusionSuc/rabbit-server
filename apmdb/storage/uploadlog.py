@@ -1,8 +1,16 @@
+"""
+数据上报接口
+"""
+
 from django.http import HttpResponse
 from django.http import HttpRequest
 from django.views.decorators.csrf import csrf_exempt
 import json
 import base64
+from .datastorage import data_storage_impl
+from .datastorage import data_storage_types
+
+TAG = "🐰-->upload : "
 
 
 @csrf_exempt  # 解决 crsf(cross site request forgery 跨站域请求伪造) 验证的问题 : https://www.dazhuanlan.com/2019/10/10/5d9f44110d951/
@@ -43,6 +51,19 @@ def parse_to_json_str(json_body):
 
 def store_point(json_str):
     json_dic = json.loads(json_str)
-    print("data type", json_dic['type'])
+    data_type = json_dic['type']
 
-    pass
+    if data_type not in data_storage_types:
+        print("unsupprot data type :", data_type)
+        return
+
+    # print_report_info(json_dic)
+
+    data_storage_impl[data_type](json_dic['infoStr'])
+
+
+def print_report_info(json_dic):
+    time = json_dic['time']
+    page_name = json_dic['pageName']
+    device_info_str = json_dic['deviceInfoStr']
+    print(TAG, "time : ", time, "; page_name : ", page_name, "; device_info_str : ", device_info_str)

@@ -4,7 +4,6 @@ from django.db import models
 # Create your models here.
 
 class PageSpeed(models.Model):
-    id = models.IntegerField(default=0, primary_key=True)
     time = models.IntegerField(default=0)
     createStartTime = models.IntegerField(default=0)
     createEndTime = models.IntegerField(default=0)
@@ -12,11 +11,10 @@ class PageSpeed(models.Model):
     fullDrawFinishTime = models.IntegerField(default=0)
     resumeEndTime = models.IntegerField(default=0)
     pageName = models.CharField(max_length=100)
-    apiRequestCostStr = models.CharField(max_length=200)
+    apiRequestCostStr = models.CharField(max_length=200, null=True)
 
 
 class AppStartInfo(models.Model):
-    id = models.IntegerField(default=0, primary_key=True)
     time = models.IntegerField(default=0)
     createStartTime = models.IntegerField(default=0)
     createEndTime = models.IntegerField(default=0)
@@ -24,7 +22,6 @@ class AppStartInfo(models.Model):
 
 
 class MemoryInfo(models.Model):
-    id = models.IntegerField(default=0, primary_key=True)
     time = models.IntegerField(default=0)
     totalSize = models.IntegerField(default=0)
     vmSize = models.IntegerField(default=0)
@@ -33,7 +30,6 @@ class MemoryInfo(models.Model):
 
 
 class ExceptionInfo(models.Model):
-    id = models.IntegerField(default=0, primary_key=True)
     time = models.IntegerField(default=0)
     crashTraceStr = models.CharField(max_length=10000)
     simpleMessage = models.CharField(max_length=1000)
@@ -43,7 +39,6 @@ class ExceptionInfo(models.Model):
 
 
 class BlockInfo(models.Model):
-    id = models.IntegerField(default=0, primary_key=True)
     time = models.IntegerField(default=0)
     costTime = models.IntegerField(default=0)
     blockIdentifier = models.CharField(max_length=200)
