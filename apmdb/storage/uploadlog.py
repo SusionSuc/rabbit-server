@@ -50,18 +50,20 @@ def parse_to_json_str(json_body):
 
 
 def store_point(json_str):
-    json_dic = json.loads(json_str)
+    # print(json_str)
+    json_dic: dict = json.loads(json_str)
     data_type = json_dic['type']
 
     if data_type not in data_storage_types:
         print("unsupprot data type :", data_type)
         return
 
-    print_report_info(json_dic)
+    # print_report_info(json_dic)
 
-    data_storage_impl[data_type](json_dic['infoStr'], json_dic['deviceInfoStr'])
+    data_storage_impl[data_type](json_dic.get('infoStr'), json_dic.get('deviceInfoStr'), json_dic.get('useTime'))
 
 
-def print_report_info(json_dic):
-    print(TAG, "time : ", json_dic['time'], "; page_name : ", json_dic['pageName'], "; device_info_str : ",
-          json_dic['deviceInfoStr'], "; infoStr :", json_dic['infoStr'])
+def print_report_info(json_dic: dict):
+    print(TAG, "time : ", json_dic.get('time'), "; device_info_str : ", json_dic.get('deviceInfoStr'), "; infoStr :",
+          json_dic.get('infoStr'), "; useTime :",
+          json_dic.get('useTime'))

@@ -15,10 +15,15 @@ def patch_device_info(device_info: DeviceInfo, device_info_str):
     device_info.appVersionCode = device_dic.get('appVersionCode')
     device_info.deviceId = device_dic.get('deviceId')
     device_info.systemVersion = device_dic.get('systemVersion')
+    device_info.memorySize = device_dic.get('memorySize')
+    device_info.rom = device_dic.get('rom')
+    device_info.supportAbi = device_dic.get('supportAbi')
+    device_info.manufacturer = device_dic.get('manufacturer')
+    device_info.isRoot = device_dic.get('isRoot')
     pass
 
 
-def save_page_speed(page_speed_str, device_info_str=""):
+def save_page_speed(page_speed_str, device_info_str="", use_time=0):
     ps_json_dic: dict = json.loads(page_speed_str)
     page_speed = PageSpeed()
     page_speed.time = ps_json_dic.get('time')
@@ -29,11 +34,12 @@ def save_page_speed(page_speed_str, device_info_str=""):
     page_speed.resumeEndTime = ps_json_dic.get('resumeEndTime')
     page_speed.apiRequestCostStr = ps_json_dic.get('apiRequestCostStr')
     patch_device_info(page_speed, device_info_str)
+    page_speed.useTime = use_time
     page_speed.save()
-    print(TAG, "page_speed save ! time : ", page_speed.time)
+    print(TAG, "page_speed save ! time : ", page_speed.time, " use time: ", use_time)
 
 
-def save_app_start(app_start_str, device_info_str=""):
+def save_app_start(app_start_str, device_info_str="", use_time=0):
     as_json_dic: dict = json.loads(app_start_str)
     app_start = AppStartInfo()
     app_start.time = as_json_dic.get('time')
@@ -41,11 +47,12 @@ def save_app_start(app_start_str, device_info_str=""):
     app_start.createEndTime = as_json_dic.get('createEndTime')
     app_start.fullShowCostTime = as_json_dic.get('fullShowCostTime')
     patch_device_info(app_start, device_info_str)
+    app_start.useTime = use_time
     app_start.save()
-    print(TAG, "app_start save ! time : ", app_start.time)
+    print(TAG, "app_start save ! time : ", app_start.time, " use time: ", use_time)
 
 
-def save_block_info(block_info_str, device_info_str=""):
+def save_block_info(block_info_str, device_info_str="", use_time=0):
     block_json_dic: dict = json.loads(block_info_str)
     block = BlockInfo()
     block.time = block_json_dic.get('time')
@@ -53,12 +60,13 @@ def save_block_info(block_info_str, device_info_str=""):
     block.identifier = block_json_dic.get('identifier')
     block.blockTime = block_json_dic.get('blockTime')
     patch_device_info(block, device_info_str)
+    block.useTime = use_time
     block.save()
-    print(TAG, "block_info save ! time : ", block.time)
+    print(TAG, "block_info save ! time : ", block.time, " use time: ", use_time)
     pass
 
 
-def save_fps_info(fps_info_str, device_info_str=""):
+def save_fps_info(fps_info_str, device_info_str="", use_time=0):
     fps_json_dict: dict = json.loads(fps_info_str)
     fps = FPSInfo()
     fps.time = fps_json_dict.get('time')
@@ -67,11 +75,12 @@ def save_fps_info(fps_info_str, device_info_str=""):
     fps.maxFps = fps_json_dict.get('maxFps')
     fps.avgFps = fps_json_dict.get('avgFps')
     patch_device_info(fps, device_info_str)
+    fps.useTime = use_time
     fps.save()
-    print(TAG, "fps info save ! time : ", fps.time)
+    print(TAG, "fps info save ! time : ", fps.time, " use time: ", use_time)
 
 
-def save_memory_info(memory_info_str, device_info_str=""):
+def save_memory_info(memory_info_str, device_info_str="", use_time=0):
     print("store data save_memory_info :", memory_info_str)
     pass
 

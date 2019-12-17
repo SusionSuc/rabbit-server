@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="88345403-2f15-4e50-bc07-ec1ea6e1d92e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apmdb/storage/datastorage.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/datastorage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/datatype.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/datatype.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apmdb/storage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apmdb/storage/uploadlog.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/uploadlog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

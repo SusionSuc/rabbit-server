@@ -9,6 +9,12 @@ class DeviceInfo(models.Model):
     deviceId = models.CharField(max_length=100, default="")
     systemVersion = models.CharField(max_length=100, default="")
     appVersionCode = models.CharField(max_length=100, default="")
+    memorySize = models.CharField(max_length=100, default="")
+    rom = models.CharField(max_length=100, default="")
+    supportAbi = models.CharField(max_length=100, default="")
+    manufacturer = models.CharField(max_length=100, default="")
+    isRoot = models.BooleanField(default=False)
+    useTime = models.IntegerField(default=0)
 
     class Meta:
         abstract = True
