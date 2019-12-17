@@ -10,6 +10,7 @@ TAG = "🐰-->storage : "
 
 
 def patch_device_info(device_info: DeviceInfo, device_info_str):
+    print(device_info_str)
     device_dic: dict = json.loads(device_info_str)
     device_info.deviceName = device_dic.get('deviceName')
     device_info.appVersionCode = device_dic.get('appVersionCode')
@@ -80,6 +81,20 @@ def save_fps_info(fps_info_str, device_info_str="", use_time=0):
     print(TAG, "fps info save ! time : ", fps.time, " use time: ", use_time)
 
 
+def save_exception_info(exception_info_str, device_info_str="", use_time=0):
+    ei_dict = json.loads(exception_info_str)
+    exception = ExceptionInfo()
+    exception.time = ei_dict.get('time')
+    exception.exceptionName = ei_dict.get('exceptionName')
+    exception.identifier = ei_dict.get('identifier')
+    exception.thread = ei_dict.get('thread')
+    exception.pageName = ei_dict.get('pageName')
+    patch_device_info(exception, device_info_str)
+    exception.useTime = use_time
+    exception.save()
+    print(TAG, "exception info save ! time : ", exception.time, " use time: ", use_time)
+
+
 def save_memory_info(memory_info_str, device_info_str="", use_time=0):
     print("store data save_memory_info :", memory_info_str)
     pass
@@ -89,7 +104,8 @@ data_storage_impl = {ApmData.PageSpeed.value: save_page_speed,
                      ApmData.AppStartInfo.value: save_app_start,
                      ApmData.BlockInfo.value: save_block_info,
                      ApmData.MemoryInfo.value: save_memory_info,
-                     ApmData.FPSInfo.value: save_fps_info}
+                     ApmData.FPSInfo.value: save_fps_info,
+                     ApmData.ExceptionInfo.value: save_exception_info}
 
 data_storage_types = list(data_storage_impl.keys())
 

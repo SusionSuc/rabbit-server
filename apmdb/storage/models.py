@@ -13,58 +13,52 @@ class DeviceInfo(models.Model):
     rom = models.CharField(max_length=100, default="")
     supportAbi = models.CharField(max_length=100, default="")
     manufacturer = models.CharField(max_length=100, default="")
-    isRoot = models.BooleanField(default=False)
-    useTime = models.IntegerField(default=0)
+    isRoot = models.CharField(max_length=100, default="False")
+    useTime = models.CharField(default=0, max_length=50)
+    time = models.CharField(default=0, max_length=50)
 
     class Meta:
         abstract = True
 
 
 class PageSpeed(DeviceInfo):
-    time = models.IntegerField(default=0)
-    createStartTime = models.IntegerField(default=0)
-    createEndTime = models.IntegerField(default=0)
-    inflateFinishTime = models.IntegerField(default=0)
-    fullDrawFinishTime = models.IntegerField(default=0)
-    resumeEndTime = models.IntegerField(default=0)
+    createStartTime = models.CharField(default=0, max_length=50)
+    createEndTime = models.CharField(default=0, max_length=50)
+    inflateFinishTime = models.CharField(default=0, max_length=50)
+    fullDrawFinishTime = models.CharField(default=0, max_length=50)
+    resumeEndTime = models.CharField(default=0, max_length=50)
     pageName = models.CharField(max_length=100)
     apiRequestCostStr = models.CharField(max_length=200, null=True)
 
 
 class AppStartInfo(DeviceInfo):
-    time = models.IntegerField(default=0)
-    createStartTime = models.IntegerField(default=0)
-    createEndTime = models.IntegerField(default=0)
+    createStartTime = models.CharField(default=0, max_length=50)
+    createEndTime = models.CharField(default=0, max_length=50)
     fullShowCostTime = models.IntegerField(default=0)
 
 
 class BlockInfo(DeviceInfo):
-    time = models.IntegerField(default=0)
-    blockTime = models.IntegerField(default=0)
+    blockTime = models.CharField(default=0, max_length=50)
     identifier = models.CharField(max_length=500)
     pageName = models.CharField(max_length=100, default="")
 
 
 class FPSInfo(DeviceInfo):
-    time = models.IntegerField(default=0)
     pageName = models.CharField(max_length=100, default="")
     minFps = models.IntegerField(default=0)
-    maxFps = models.IntegerField()
-    avgFps = models.IntegerField
+    maxFps = models.IntegerField(default=0)
+    avgFps = models.IntegerField(default=0)
+
+
+class ExceptionInfo(DeviceInfo):
+    pageName = models.CharField(max_length=200, default="")
+    exceptionName = models.CharField(max_length=200, default="")
+    thread = models.CharField(max_length=100, default="")
+    identifier = models.CharField(max_length=300, default="")
 
 
 class MemoryInfo(DeviceInfo):
-    time = models.IntegerField(default=0)
     totalSize = models.IntegerField(default=0)
     vmSize = models.IntegerField(default=0)
     nativeSize = models.IntegerField(default=0)
     otherSize = models.IntegerField(default=0)
-
-
-class ExceptionInfo(DeviceInfo):
-    time = models.IntegerField(default=0)
-    crashTraceStr = models.CharField(max_length=10000)
-    simpleMessage = models.CharField(max_length=1000)
-    threadName = models.CharField(max_length=100)
-    currentSystemName = models.CharField(max_length=100)
-    exceptionName = models.CharField(max_length=200)

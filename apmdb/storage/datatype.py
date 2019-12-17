@@ -8,5 +8,5 @@ class ApmData(Enum):
     AppStartInfo = 'app_start'
     BlockInfo = 'block_info'
     FPSInfo = 'fps_info'
-    ExceptionInfo = 'RabbitExceptionInfo'
+    ExceptionInfo = 'exception_info'
     MemoryInfo = 'RabbitMemoryInfo'

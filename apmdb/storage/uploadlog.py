@@ -50,7 +50,7 @@ def parse_to_json_str(json_body):
 
 
 def store_point(json_str):
-    # print(json_str)
+    print(json_str)
     json_dic: dict = json.loads(json_str)
     data_type = json_dic['type']
 
