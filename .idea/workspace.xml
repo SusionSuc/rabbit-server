@@ -3,26 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88345403-2f15-4e50-bc07-ec1ea6e1d92e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitServer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitServer/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitServer/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0002_auto_20191212_0336.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0003_auto_20191216_0649.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0004_auto_20191216_0656.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0005_auto_20191216_0658.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0006_auto_20191216_0920.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0007_auto_20191216_0935.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0008_fpsinfo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/0009_auto_20191217_0337.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/.cache/v/cache/lastfailed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/datastorage.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/datastorage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/datatype.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/datatype.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/storage/uploadlog.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/storage/uploadlog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
