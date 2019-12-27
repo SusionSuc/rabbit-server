@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="428c2749-8458-4deb-bb94-e88914f21117" name="Default Changelist" comment="" />
+    <list default="true" id="428c2749-8458-4deb-bb94-e88914f21117" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apmdb/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apmdb/base/restfulapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitServer/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apmdb/query/pagespeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/query/pagespeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apmdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +17,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577437914354</updated>
       <workItem from="1577437929458" duration="187000" />
+      <workItem from="1577438288352" duration="7776000" />
     </task>
     <servers />
   </component>
@@ -81,25 +97,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1636" height="419" key="GridCell.Tab.0.bottom" timestamp="1577438174447">
+    <state x="533" y="-817" key="#com.intellij.ide.util.MemberChooser" timestamp="1577446371323">
+      <screen x="-240" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="533" y="-817" key="#com.intellij.ide.util.MemberChooser/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@-240.-1080.1920.1080" timestamp="1577446371323" />
+    <state width="1638" height="505" key="GridCell.Tab.0.bottom" timestamp="1577438501241">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="419" key="GridCell.Tab.0.bottom/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438174447" />
-    <state width="1636" height="419" key="GridCell.Tab.0.center" timestamp="1577438174445">
+    <state width="1638" height="505" key="GridCell.Tab.0.bottom/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438501241" />
+    <state width="1638" height="505" key="GridCell.Tab.0.center" timestamp="1577438501238">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="419" key="GridCell.Tab.0.center/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438174445" />
-    <state width="1636" height="419" key="GridCell.Tab.0.left" timestamp="1577438174444">
+    <state width="1638" height="505" key="GridCell.Tab.0.center/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438501238" />
+    <state width="1638" height="505" key="GridCell.Tab.0.left" timestamp="1577438501236">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="419" key="GridCell.Tab.0.left/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438174444" />
-    <state width="1636" height="419" key="GridCell.Tab.0.right" timestamp="1577438174446">
+    <state width="1638" height="505" key="GridCell.Tab.0.left/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438501236" />
+    <state width="1638" height="505" key="GridCell.Tab.0.right" timestamp="1577438501239">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="419" key="GridCell.Tab.0.right/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438174446" />
+    <state width="1638" height="505" key="GridCell.Tab.0.right/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438501239" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1577438118261">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438118261" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1577450492255">
+      <screen x="-240" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@-240.-1080.1920.1080" timestamp="1577450492255" />
+    <state x="385" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1577442192056">
+      <screen x="-240" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="385" y="-839" width="670" height="676" key="search.everywhere.popup/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@-240.-1080.1920.1080" timestamp="1577442192056" />
   </component>
 </project>
