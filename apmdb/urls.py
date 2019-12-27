@@ -1,8 +1,10 @@
 from django.urls import path
 from . import views
 from .storage import uploadlog
+from .query import pagespeed
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('upload-log', uploadlog.upload_log, name='uploadlog')
+    path('', views.index),
+    path('upload-log', uploadlog.upload_log),
+    path('page-speed/all-page', pagespeed.all_page)
 ]
