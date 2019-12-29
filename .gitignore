@@ -1,3 +1,9 @@
-*/**/__pycache__/
+**/__pycache__/
 
 apmdb/query/__pycache__/pagespeed.cpython-37.pyc
+
+venv
+
+*.pyc
+*.py[cod]
+*.idea/*

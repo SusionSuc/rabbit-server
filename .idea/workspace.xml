@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="428c2749-8458-4deb-bb94-e88914f21117" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apmdb/base/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apmdb/base/restfulapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RabbitServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RabbitServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitServer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitServer/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/query/pagespeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/query/pagespeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apmdb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apmdb/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +48,14 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -90,6 +87,8 @@
       <updated>1577437914354</updated>
       <workItem from="1577437929458" duration="187000" />
       <workItem from="1577438288352" duration="7776000" />
+      <workItem from="1577514978801" duration="2614000" />
+      <workItem from="1577608631234" duration="154000" />
     </task>
     <servers />
   </component>
@@ -97,10 +96,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="416" y="56" key="#RabbitServer" timestamp="1577515195880">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="416" y="56" key="#RabbitServer/0.0.1440.900@0.0.1440.900" timestamp="1577515195880" />
     <state x="533" y="-817" key="#com.intellij.ide.util.MemberChooser" timestamp="1577446371323">
       <screen x="-240" y="-1080" width="1920" height="1080" />
     </state>
     <state x="533" y="-817" key="#com.intellij.ide.util.MemberChooser/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@-240.-1080.1920.1080" timestamp="1577446371323" />
+    <state x="578" y="253" key="FileChooserDialogImpl" timestamp="1577515359964">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="578" y="253" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1577515359964" />
     <state width="1638" height="505" key="GridCell.Tab.0.bottom" timestamp="1577438501241">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -117,14 +124,20 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="505" key="GridCell.Tab.0.right/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438501239" />
-    <state x="349" y="164" key="SettingsEditor" timestamp="1577438118261">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="299" y="141" key="SettingsEditor" timestamp="1577518157990">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="299" y="141" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1577518157990" />
     <state x="349" y="164" key="SettingsEditor/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1577438118261" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1577450492255">
-      <screen x="-240" y="-1080" width="1920" height="1080" />
+    <state width="500" height="400" key="SwitcherDM" timestamp="1577515213839">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="500" height="400" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1577515213839" />
     <state width="500" height="445" key="SwitcherDM/1680.-1080.1080.1920/-240.-1080.1920.1080/0.0.1680.1050@-240.-1080.1920.1080" timestamp="1577450492255" />
+    <state x="384" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1577514980704">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="384" y="293" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1577514980704" />
     <state x="385" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1577442192056">
       <screen x="-240" y="-1080" width="1920" height="1080" />
     </state>
